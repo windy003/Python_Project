@@ -1,15 +1,13 @@
-from typing import List
-
-class 解决方案:
-    def 函数(self,数组:List[int],目标数值:int)-> List[int]:
-        字典={}
-        for 索引,值 in enumerate(数组):
-            if 值 in 字典:
-                return [字典[值],索引]
-            else:
-                字典[目标数值-值] =索引
+def 求组成目标和的两个元素索引(数组,目标数值):
+    字典={}
+    for 索引,值 in enumerate(数组):
+        if 值 in 字典:
+            print([字典[值],索引])
+        else:
+            字典[目标数值-值] =索引
 
 
+输入的数组=eval(input("请输入要查询的数组:"))
+目标值=eval(input("请输入目标值:"))
 
-案例一 = 解决方案()
-print(案例一.函数([11,15,2,7],9))
+求组成目标和的两个元素索引(输入的数组,目标值)
