@@ -19,5 +19,6 @@ for a in 文件名列表:
             名字列表["%s开头的文件或文件夹个数" % b]+=1
 
 元组列表=zip(名字列表.values(),名字列表.keys())
-print(list(sorted(元组列表,reverse=True)))
-
+# 元组列表是一个zip对象
+print(sorted(元组列表,reverse=True))
+#sorted 可以对所有可迭代的对象进行排序操作，返回的是一个列表
