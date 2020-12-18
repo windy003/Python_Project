@@ -8,8 +8,8 @@ def hello_world():
    while True:
        for event in pygame.event.get():
            if event.type==QUIT:
-              pygame.quit()
-               sys.exit()
+                pygame.quit()
+                sys.exit()
            pygame.display.update()
 if __name__=="__main__":
    hello_world()
