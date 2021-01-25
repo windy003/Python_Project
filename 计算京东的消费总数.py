@@ -4,7 +4,7 @@ import re
 def  获得当前页面总金额数(网页源码):
     
     #获得所有span标签
-    with open (网页源码,'r',encoding='UTF-8') as 源文件变量:
+    with open (网页源码,'r',encoding='ISO-8859-1') as 源文件变量:
         源文件数据=源文件变量.read()
     bs4解析出来的数据 = BeautifulSoup(源文件数据, "html.parser")
     筛选后的数据=bs4解析出来的数据.find_all('span')
@@ -71,5 +71,5 @@ def  获得当前页面总金额数(网页源码):
     print("指定位数的总金额为:"+str(指定位数的总金额))
     
 
-if __name__ == '__main__':
-    获得当前页面总金额数('网页源码.html')   
+if   __name__ == '__main__':
+    获得当前页面总金额数("D:\\temp\\网页源码.html")   
