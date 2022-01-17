@@ -1,0 +1,1 @@
+all('<span data-reactid=".0.7:.*?">(.*?)</span>',t,re.S)))
